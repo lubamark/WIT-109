@@ -31,7 +31,7 @@ function checkResult3() {
 
   let valueStr = String(value);
   if (valueStr.length === 3) {
-    resElement.innerText = +valueStr[0] + valueStr[1] + valueStr[2]
+    resElement.innerText = +valueStr[0] + +valueStr[1] + +valueStr[2];
   } else {
     resElement.innerText = 'Нужно ввести 3 цифры'
   }
@@ -46,7 +46,5 @@ window.onload = function () {
   codeBox2.innerHTML = checkResult2.toString();
 
   let codeBox3 = document.getElementById('code3');
-  codeBox3.innerHTML = checkResult2.toString();
-
-
+  codeBox3.innerHTML = checkResult3.toString();
 }
